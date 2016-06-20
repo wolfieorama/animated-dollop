@@ -20,8 +20,11 @@ gem 'puma', '~> 3.0'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
-# use chewy to chew on elastic 
+# use chewy to chew on elastic
 gem 'chewy'
+# to serialize the api responses 
+gem 'active_model_serializers', '~> 0.10.0'
+
 
 
 group :development, :test do
