@@ -13,4 +13,18 @@ class StoreIndex < Chewy::Index
       field :name, :description
     end
   end
+
+  define_type Review.includes(:review_author) do
+    field :body, :title
+    field :review_author do
+      field :name, :bio
+    end
+  end
+
+  define_type ReviewAuthor.includes(:reviews) do
+    field :name, :bio
+    field :reviews do
+      field :body, :title
+    end
+  end
 end
