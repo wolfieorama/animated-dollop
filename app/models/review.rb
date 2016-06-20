@@ -9,5 +9,5 @@ class Review < ApplicationRecord
   #associations
   belongs_to :review_author
   belongs_to :product
-
+  alias_attribute :description, :body
 end

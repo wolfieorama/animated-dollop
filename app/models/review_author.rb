@@ -7,4 +7,6 @@ class ReviewAuthor < ApplicationRecord
 
   # associations
   has_many :reviews
+  alias_attribute :title, :name
+  alias_attribute :description, :bio
 end

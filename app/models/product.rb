@@ -8,4 +8,5 @@ class Product < ApplicationRecord
   # associations
   belongs_to :vendor
   has_many :reviews
+  alias_attribute :title, :name
 end
